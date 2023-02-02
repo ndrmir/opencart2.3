@@ -1,0 +1,29 @@
+2017-01-26 13:19:36 - PHP Notice:  Undefined index: guest in /home/www/demo-opencart.ru/public_html/catalog/controller/checkout/guest_shipping.php on line 84
+2017-02-21 0:22:39 - PHP Notice:  Undefined index: required in /home/www/demo-opencart.ru/public_html/admin/controller/customer/custom_field.php on line 499
+2017-05-18 9:45:46 - PHP Warning:  SessionHandler::write(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,' in /home/www/demo-opencart.ru/public_html/system/library/session/native.php on line 21
+2017-06-29 15:29:46 - PHP Notice:  Undefined index: country_id in /home/www/demo-opencart.ru/public_html/catalog/controller/extension/total/shipping.php on line 68
+2017-06-29 15:29:46 - PHP Notice:  Undefined index: country_id in /home/www/demo-opencart.ru/public_html/catalog/controller/extension/total/shipping.php on line 78
+2017-07-13 12:04:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:04:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:04:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:04:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:20 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:20 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:20 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:20 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:20 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:20 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:20 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:20 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
+2017-07-13 12:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/www/demo-opencart.ru/public_html/system/library/cart/cart.php on line 50
