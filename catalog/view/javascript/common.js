@@ -133,11 +133,36 @@ $(document).ready(function() {
 	$(document).ajaxStop(function() {
 		$('[data-toggle=\'tooltip\']').tooltip({container: 'body'});
 	});
+	
+		
+	
+	$("#cart").click(function(){
+		let width = parseInt($("#cart").width());
+		if(width > 427) {
+			// toggle мешает css min-width
+			if ($("#cart").hasClass('open')) {
+				$('#cart .dropdown-menu').css({'min-width': '100%'});
+				$('#cart .dropdown-menu').animate({ 'min-width': '0%' }, 'slow');
+			} else {
+				$('#cart .dropdown-menu').css({'min-width': '0%', 'width': 0, 'display': 'block', 'overflow': 'hidden'});				
+				$('#cart .dropdown-menu').animate({ 'min-width': '100%' }, 'slow');							
+			}
+		} else {
+			$('#cart .dropdown-menu').slideToggle( "slow");
+		}			
+	});
 });
 
 // Cart add remove functions
 var cart = {
 	'add': function(product_id, quantity) {
+		// Закрываю блок корзины при добавлении товара
+		let width = parseInt($("#cart").width());
+		if ($("#cart").hasClass('open') && (width > 427)) {
+			$('#cart .dropdown-menu').animate({ 'min-width': '0%' }, 'slow');
+		} else if($("#cart").hasClass('open')) {
+			$('#cart .dropdown-menu').slideToggle( "slow");
+		}
 		$.ajax({
 			url: 'index.php?route=checkout/cart/add',
 			type: 'post',

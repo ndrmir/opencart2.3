@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>opencart.ws</name>
+	<version>1.2</version>
+	<link>https://opencart.ws</link>
+	<author>info@opencart.ws</author>
+	<code>viewElse</code>
+	<file path="catalog/view/theme/*/template/common/header.tpl">
+		<operation>
+			<search ><![CDATA[</head>]]></search>
+			<add position="before"><![CDATA[
+				<script type="text/javascript" src="catalog/view/javascript/jquery/jquery.autopager.js" ></script>
+				<script type="text/javascript">function get_cookie(cookie_name){var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );if(results){return (unescape(results[2]));}else{return null;}}</script>
+				<script type="text/javascript" src="catalog/view/javascript/bal_language.js" ></script>
+				<script type="text/javascript" src="catalog/view/javascript/bal_loader.js" ></script>
+				<link href="catalog/view/javascript/bal_style.css" rel="stylesheet" type="text/css" />
+			]]></add>
+		</operation>
+	</file>
+	<file path="system/library/pagination.php">
+		<operation >
+			<search><![CDATA[$output .= '</ul>';]]></search>
+			<add position="after"><![CDATA[
+			if ($page < $num_pages) {
+				$output .= ' <data data-bal="bal-settings" data-d-start="' . (($total) ? (($page - 1) * $limit) + 1 : 0) . '"  data-d-end="' . (((($page - 1) * $limit) > ($total - $limit)) ? $total : ((($page - 1) * $limit) + $limit)) . '" data-d-total="' . $total . '" data-p-total="' . ceil($total / $limit) . '" href="' . str_replace('{page}', $page + 1, $this->url) . '"></data>';
+			} else {
+				$output .= ' <data data-bal="bal-settings" data-d-start="' . (($total) ? (($page - 1) * $limit) + 1 : 0) . '"  data-d-end="' . (((($page - 1) * $limit) > ($total - $limit)) ? $total : ((($page - 1) * $limit) + $limit)) . '" data-d-total="' . $total . '" data-p-total="' . ceil($total / $limit) . '"></data>';
+			}
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/*/template/product/{category,manufacturer_info,special,search}.tpl">
+		<operation >
+			<search ><![CDATA[($products as $product)]]></search>
+			<add position="after"><![CDATA[<data data-bal="bal-elemen"></data>]]></add>
+		</operation>
+	</file>
+</modification>
