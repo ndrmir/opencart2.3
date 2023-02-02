@@ -151,6 +151,15 @@ $(document).ready(function() {
 			$('#cart .dropdown-menu').slideToggle( "slow");
 		}			
 	});
+	$("#button-cart").click(function(){
+		// Закрываю блок корзины при добавлении товара
+		let width = parseInt($("#cart").width());
+		if ($("#cart").hasClass('open') && (width > 427)) {
+			$('#cart .dropdown-menu').animate({ 'min-width': '0%' }, 'slow');
+		} else if($("#cart").hasClass('open')) {
+			$('#cart .dropdown-menu').slideToggle( "slow");
+		}
+	});
 });
 
 // Cart add remove functions
